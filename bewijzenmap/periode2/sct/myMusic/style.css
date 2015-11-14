@@ -1,0 +1,15 @@
+body{ 
+	background-color: white; 
+}
+
+#albumDisplay{
+    width: 500px;
+    height: 500px;
+    background-color: azure;
+    display: block;
+    
+}
+
+#albumThumbs{
+    width: 500px;
+}

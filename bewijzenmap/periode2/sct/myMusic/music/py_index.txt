@@ -1,0 +1,13 @@
+[				"Brenda Lee - I'm sorry.mp3",
+				"Chordettes - Mister Sandman.mp3",
+				"Diana Dors - Come by Sunday.mp3",
+				"Doris Day - By The Light Of The Silvery Moon.mp3",
+				"George Formby - The Window Cleaner (When I'm Cleaning Windows.mp3",
+				"Glenn Miller - American Patrol.mp3",
+				"Gracie Fields - Smile When You Say Goodbye.mp3",
+				"Judy Garland - Over The Rainbow.mp3",
+				"Marlene Dietrich - Lili Marlene.mp3",
+				"Patti Page - How Much IsThat Doggie In The Window.mp3",
+				"py_index.txt",
+				"The Andrew Sisters - Rum And Coca Cola.mp3",
+]

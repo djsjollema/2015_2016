@@ -1,0 +1,13 @@
+body{ 
+	background-color: azure; 
+}
+
+#container{
+    width: 850px;
+    background-color: azure;
+}
+
+#tumbs{
+    overflow: auto;
+    height: 200px;
+}
