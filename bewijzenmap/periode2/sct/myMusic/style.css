@@ -1,5 +1,5 @@
 body{ 
-	background-color: white; 
+	background: url(images/blurred_golden_background_192849.jpg);
 }
 
 #albumDisplay{
@@ -12,4 +12,15 @@ body{
 
 #albumThumbs{
     width: 500px;
+}
+
+#container{
+    margin-left: auto;
+    background-color: lightgray;
+    margin-right: auto;
+    margin-top: 50px;
+    width: 500px;
+    border: 8px midnightblue solid;
+    border-radius: 25px;
+    padding: 5px;
 }
