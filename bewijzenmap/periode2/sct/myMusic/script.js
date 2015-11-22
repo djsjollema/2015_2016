@@ -28,8 +28,21 @@ window.addEventListener("load",function(){
     for(var i = 0; i<imageNames.length; i++){
         var thumb = new Image();
         thumb.src = "images/small/" + imageNames[i];
+        thumb.width = 120;
+        thumb.height = 120;
         thumb.id = i;
+        thumb.style.border= "2px outset #ebb07a";
+        thumb.className = "thumb"
         albumThumbs.appendChild(thumb);
+        thumb.addEventListener('mouseover',function(e){
+           e.target.style.border = "2px outset red";
+            e.target.style.cursor = "pointer"; 
+        });
+        thumb.addEventListener('mouseout',function(e){
+           e.target.style.border = "2px outset #ebb07a";
+            e.target.style.cursor = "default";
+        });
+        
         thumb.addEventListener('click', function(e){
             albumDisplay.src = "images/big/" + imageNames[e.target.id];
             player.src = "music/"+  musicFiles[e.target.id];
@@ -38,6 +51,8 @@ window.addEventListener("load",function(){
     }
     
     player.src = "music/" + musicFiles[1];
+    player.style.backgroundColor = "gray";
+    player.style.width = "500px";
     
     player.addEventListener('ended', function(){
         console.log('einde');

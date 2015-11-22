@@ -7,6 +7,8 @@ body{
     height: 500px;
     background-color: azure;
     display: block;
+    margin-bottom: 5px;
+     margin-top: 5px;
     
 }
 
@@ -16,11 +18,15 @@ body{
 
 #container{
     margin-left: auto;
-    background-color: lightgray;
+    background-color: #e8cfbf;
     margin-right: auto;
     margin-top: 50px;
     width: 500px;
-    border: 8px midnightblue solid;
+    border: 4px #e7bfae inset;
     border-radius: 25px;
-    padding: 5px;
+    padding: 10px;
+}
+
+.thumb:hover{
+    cursor: pointer
 }
