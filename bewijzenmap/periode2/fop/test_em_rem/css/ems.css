@@ -1,0 +1,25 @@
+     body {
+/*         font-size: 5vw;  */
+/*         font-size: 60px;  */
+/*        font-size: .5em; */
+      }
+      
+      #wrapper p {
+         font-size: 2em;
+      }
+      #wrapper {
+/*font-size: .5em;*/
+         background-color: aquamarine;
+      }
+      #box {
+         background-color: blueviolet;
+         width: 1em;
+         height: 1em;
+         display: inline-table;
+      }
+      #rembox {
+         background-color: bisque;
+         width: 1rem;
+         height: 1rem;
+         display: inline-flex;
+      }

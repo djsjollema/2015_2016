@@ -1,0 +1,41 @@
+body {
+   background-color: #777;
+}
+section {
+   background-color: #fff;
+}
+p {
+   background-color: lightgrey;
+   padding: 1em;
+/*   width: 33.33%;*/
+/*   box-sizing: border-box;*/
+}
+p:nth-child(3) {
+   background-color: cadetblue;
+}
+
+.niet p {
+/*   display: none;*/
+}
+
+.in-line p {
+/*   display: inline;*/
+/*   padding: 0 1em;*/
+}
+
+.in-line-block p {
+/*   display: inline-block;*/
+}
+
+.gewoon p {
+/*   float: left;*/
+}
+
+h3 {
+/*   clear: left;*/
+}
+
+
+a {
+/*   display: block;*/
+}
