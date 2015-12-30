@@ -9,7 +9,7 @@ Die met DemoBlock is gebruikt als demonstratie van display-types.
 
 Bijdragen:
 * Jelle Sjollema
-* [Theo den Blanken](http://blanken5.home.xs4all.nl/ "Title") site van Theo
+* [Theo den Blanken](http://blanken5.home.xs4all.nl/ "Site van Theo")
 
 
 ![Icoon Theo](https://pbs.twimg.com/profile_images/632928961022963712/ZL00b8Py.png)
@@ -20,4 +20,4 @@ Veel
       ermee.
    
 ```
-Instructie voor [het bewerken van md-bestanden:](https://confluence.atlassian.com/bitbucketserver/markdown-syntax-guide-776639995.html "md-bestanden bewerken") 
+Instructie voor [het bewerken van md-bestanden](https://confluence.atlassian.com/bitbucketserver/markdown-syntax-guide-776639995.html "md-bestanden bewerken") 
