@@ -1,0 +1,95 @@
+@charset "UTF-8";
+
+html, body, header, h1, h3 {
+    margin:0;
+}
+html {
+    background-color:rgb(77,77,77);
+}
+body {
+    width:1280px;
+    margin: 0 auto;
+    background-color:rgb(255, 255, 255);
+    color: rgb(20,20,20);
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    position:relative;
+}
+header {
+    overflow:hidden;
+    position:relative;
+    height: 167px;
+    background: url(../afb/tutorialheader.gif) no-repeat;
+    background-color:rgb(0, 0, 0);
+}
+#kopachtergrond {    
+    position:absolute;    
+}
+h1, #tagline {
+    color:rgb(255, 255, 255);
+    position:absolute;
+}
+h1 {
+    padding: 60px 0 0 30px;
+    text-shadow:0 0 40px rgba(10,0,10,0.7);
+}
+#tagline {
+    padding: 100px 0 0 160px;
+    text-shadow:0 0 80px rgba(10,0,10,0.5);
+}
+nav {
+    background-color:rgb(0,0,0);
+    height: 18px;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0 10px 0 auto;
+    position:absolute;
+    right: 40px;
+}
+nav li {
+    width: 120px;
+    float:left;
+}
+nav a{
+    color: rgb(255,255,255);
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 18px;    
+    display: block;
+    text-align:center;
+    border-right: rgb(255,255,255) solid 1px;
+    background-color:rgb(0,0,0); /*omdat we de knop uit gaan schuiven zal hij ook boven het wit te zien moeten zijn*/
+}
+nav a:hover {
+    color: rgb(255,10,255);
+}
+nav li:first-child {
+    border-left: rgb(255,255,255) solid 1px;
+}
+
+article {
+    padding: 5px 40px;
+	-moz-column-width: 490px;
+	-moz-column-gap: 40px;
+	-moz-column-rule: 1px solid black;
+	-webkit-column-width: 490px;
+	-webkit-column-gap: 40px;
+	-webkit-column-rule: 1px solid black;
+	column-width: 490px;
+	column-gap: 40px;
+	column-rule: 1px solid black;
+   margin-bottom: 1em;
+}
+article p {
+   margin-top: 0;
+}
+h3 {
+    padding: 29px 40px 7px 40px;
+}
+.code {
+	font-family:"Courier New", Courier, monospace;
+}
+code {
+      color: blue;
+       font-size: 125%;
+    }

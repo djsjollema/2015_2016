@@ -1,0 +1,250 @@
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>lessen van Theo den Blanken - een responsive menu</title>
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+    <link href="css/stijl.css" rel="stylesheet" type="text/css">
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script language="javascript" src="js/parallax.js"></script>
+    <script language="javascript" src="js/knopAnimatie.js"></script>
+    <style>
+	nav li {
+	    width: auto;
+	}
+	nav li a{
+	    padding: 0 8px;
+	}
+	.naarTop {
+	    color: #fff;
+	    text-align: center;
+	    background-color: #f0f;
+	    text-decoration: none;
+	    padding: 20px 18px;
+	    float: right;
+	    margin-right: 6px;
+	    border-radius: 40px;
+	    -webkit-transform:rotate(20deg);
+-moz-transform:rotate(20deg);
+-o-transform:rotate(20deg);
+-ms-transform:rotate(20deg);
+transform:rotate(20deg);
+
+	}
+	.naarTop a {
+	    color: #fff;
+	    text-decoration: none;
+	}
+	h3 {
+	    clear: both;
+	}
+       
+       body {background-color: #fff;}
+   #svg2 {
+      position: absolute;
+   }
+   
+.mijter {
+    stroke-dasharray: 600;
+    stroke-dashoffset: 600;
+    -webkit-animation: tekenen 14s linear infinite;
+    animation: tekenen 24s linear infinite;
+}
+    @-webkit-keyframes tekenen {
+        from {stroke-dashoffset: 600}
+        to {stroke-dashoffset: 0}
+    }
+    @keyframes tekenen {
+        from {stroke-dashoffset: 600}
+        to {stroke-dashoffset: 0}
+    }
+    </style>
+</head>
+
+<body>
+    <header>
+       <svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   width="110mm"
+   height="97mm"
+   id="svg2">
+  
+  <g
+     id="layer2"
+     style="display:inline">
+    
+    <path class="mijter"
+       d="m 31.545156,23.383227 c 0.109851,0.826898 0.315923,1.636862 0.153917,2.511614 0,0 -4.348522,-1.160694 -9.295041,0.587306 -6.697893,2.366901 -8.532372,6.754046 -8.532372,6.754046 l -1.620672,-3.439947 c 0,0 6.11318,-4.840076 9.00904,-5.285775 0.14026,-2.037977 -1.521039,-7.608201 -2.049678,-8.683775 -2.94074,0.330098 -7.408207,3.61676 -7.276243,4.960192 -0.646328,-1.602274 -0.01679,-3.701675 -0.01679,-3.701675 0,0 3.76393,-3.249725 6.10136,-3.481899 -0.256292,-2.107233 -3.252734,-6.3741127 -3.252734,-6.3741127 -0.04551,-0.881212 1.957169,-1.194061 2.484664,-0.507647 0.229667,0.769937 2.85065,4.8043527 3.106448,5.8873437 1.164766,-0.253284 5.768027,-0.464886 6.813665,0.155404 0.49886,0.397599 1.264863,2.749255 1.407864,2.959006 -0.882174,-0.898947 -5.983886,-1.11318 -6.698888,-0.735625 -0.715003,0.377557 2.122177,6.727611 2.001275,8.567531 2.318117,-0.94877 6.128423,-0.636552 7.664184,-0.306078 C 31.801128,22.699344 30.908084,14.739215 29.220394,12.764302 25.097905,8.3019523 20.904968,4.9110563 14.443662,3.6994533 11.655761,8.5982103 8.7949986,16.224058 9.8676416,20.94467 c 0.6673364,2.726787 3.1383414,7.576031 2.9979534,8.293791 -0.465079,0.225626 -0.256332,0.445653 -0.816785,0.433118 C 10.885458,28.766264 8.4827256,22.921675 8.2469676,21.406126 7.9089966,19.233509 8.9775046,11.700639 9.1526386,10.792623 9.3453426,9.7935053 10.868646,6.7653663 10.868646,6.7653663 l 1.648879,0.319636"
+       id="path3896"
+       style="fill:none;stroke:rgba(255,255,255, 1);stroke-width:2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+  </g>
+</svg>
+        <div id=kopachtergrond><img src="afb/spiralen.png"></div>
+        <h1>Een responsive menu</h1>
+        <div id=tagline>met HTML5 en CSS3</div>
+    </header>
+    <nav>
+        <ul>
+	    
+       <li><a href=index.html>home</a></li>
+        </ul>
+    </nav>
+
+<h3>responsive menu: de opdracht (00:01:24)</h3>
+<article>
+   <p>
+    We gaan een responsive menu maken en hier zie je het resultaat.
+<ol><li>Het menu past zich aan de viewport aan;</li>
+   <li>Middels mediaquery's zijn er sterke aanpassingen mogelijk;</li>
+   <li>Er is een dropdown opgenomen;</li>
+   <li>Het menu kan in de mobile versie worden weggeschoven.</li></ol>
+Het overige deel van de pagina bevat enige inhoud met een afbeelding naar keuze.
+   </p>
+   <p>Je leert hier de belangrijkste kenmerken van responsive werken. Je maakt ook kennis met Font Awesome, de tilde-selector, float-eigenschappen, box-model en het maken van een menu.</p>
+</article>
+<iframe width="1280" height="720" src="https://www.youtube.com/embed/vQZFOUOUAxE?rel=0" frameborder="0" allowfullscreen></iframe>
+
+<h3>responsive menu stap 1: opbouw html (00:04:55)</h3>
+<article>
+   <p>
+    Een menu is een opsomming van linkjes. De linkjes zitten dus in een ongeordende lijst. Het geheel zit bij html5 in een nav-tag. <br>
+Om een submenu te maken plaats voor het afsluiten van een der items nog een opsommingslijst met linkjes. Het wordt zo een geneste opsommingslijst. <br>
+Om voor het stijlen de opsommingslijst eenvoudig te selecteren, wordt het list-item waar deze inziet, een class-naam gegeven.
+   </p>
+</article>
+<iframe width="1280" height="720" src="https://www.youtube.com/embed/PpE2mDLOgco?rel=0" frameborder="0" allowfullscreen></iframe>
+
+<h3>responsive menu stap 2: basisopmaak mobiel (00:08:02)</h3>
+<article>
+   <p>
+    Bij responsive design gaan we ook met dit menu eerst werken aan de mobiele versie: <em>mobile first</em>.
+    <br> De opmaak voor grotere vensters vergt meer opmaakcode, die dus niet wordt verwerkt door mobieltjes. <br>
+De opmaak begint met kleurkeuzes en het verwijderen van de opmaakkenmerken van de opsommingslijsten en de linkjes. In een mobiel zijnde menu-items lineair in verticale zin. Vaak is het nodig de linkjes wat groter te maken zodat ze eenvoudiger aan te raken zijn. <br>
+Ook is het is het mogelijk roll-over effecten aan te brengen.
+   </p>
+</article>
+<iframe width="1280" height="720" src="https://www.youtube.com/embed/-Kom39bHpN4?rel=0" frameborder="0" allowfullscreen></iframe>
+
+
+<h3>responsive menu stap 3: submenu stijlen (00:07:35)</h3>
+<article>
+   <p>
+    Door gebruik te maken van de class-selector van het submenu, kun je het submenu apart selecteren en stijlen. In dit voorbeeld willen we voorkomen dat het hele submenu door een roll-over verkleurt. <br>
+Het is ook wenselijk dit menu te verbergen, tot het betreffende list-item verborgen wordt. We maken daarom de hoogte, regel-hoogte, padding en font-grootte 0. Om een  animatie te krijgen maken we de items ook transparant en voegen we de transition-eigenschap toe. <br>
+Met de selector <code>.submenu:hover ul li</code> kun je alle waarden herstellen en komt het menu tevoorschijn.
+   </p>
+</article>
+<iframe width="1280" height="720" src="https://www.youtube.com/embed/GPnbWjM72Cs?rel=0" frameborder="0" allowfullscreen></iframe>
+
+
+<h3>responsive menu stap 4: mediaqueries (00:09:20)</h3>
+<article>
+   <p>
+    Wil je de site in een mobiel goed weergeven, moet je voorkomen dat deze de pagina verkleint. Dit doen deze devices om de gebruiker daarna naar de gewenste plek te laten inzoomen. Dit voorkom je met de viewport declaratie: <br>
+Een meta-tag met als attribuut name die de waarde viewport heeft en het content-attribuut met de waarde: 
+<code>width=device-width, initial-scale=1</code>
+
+Vervolgens kun met een mediaquerie de stijl gaan schrijven of overschrijven voor de opmaak bij een groter venster:
+<pre>@media screen and (min-width:676px) {
+    selector {
+     eigenschap: waarde;
+     eigenschap2: waarde;
+    }
+   }</pre>
+In dit menu willen we de items van het hoofdmenu naast elkaar.
+Dit doen we met de float-left-eigenschap. <br>
+Als gevolg daarvan verliest het omhullende element hoogte: het 'voelt' de inhoud niet meer. Dit voorkom je door dat element een <code>overflow: hidden;</code> te geven.
+   </p>
+</article>
+<iframe width="1280" height="720" src="https://www.youtube.com/embed/O_led4ZpzQo?rel=0" frameborder="0" allowfullscreen></iframe>
+
+
+<h3>responsive menu stap 5: de items verdelen (00:07:51)</h3>
+<article>
+   <p>
+    In sommige horizontale menu's is het mooi als de items gelijk verdeeld worden. Bij 4 items krijgt elk item dus 25% breedte. Dat lijkt te veel, maar dat komt omdat padding en randdikte bij de breedte van de inhoud wordt toegevoegd, waardoor het element breder wordt. Met <code>box-sizing: border-box</code> is de opgegeven breedte inclusief padding en rand. Nu passen de items precies naast elkaar. <br>
+Door elk item een rechterrand te beven, krijgt de laatste dat ook. Dat is niet zo fraai, maar met :last-child selecteer je dat element zodat je de rand daar kan weghalen. <br>
+Het drop-downmenu moet ook een breedte van 25% krijgen. Daar kan beter met vw als lengtemaat gewerkt worden. <br>
+Merk op: voor Firefox is het nog wel verstandig de box-sing te voorzien van een prefix: <code>-moz-box-sizing: border-box;</code>
+   </p>
+</article>
+<iframe width="1280" height="720" src="https://www.youtube.com/embed/H6DHEAmKwrU?rel=0" frameborder="0" allowfullscreen></iframe>
+
+
+<h3>responsive menu stap 6: voor bredere viewports (00:08:38)</h3>
+<article>
+   <p>
+    Als het scherm breder wordt, komen de teksten van het menu te ver van elkaar. Daarom volgt er een nieuwe mediaquery. De items krijgen een vaste breedte. <br>
+Ook kijken we opnieuw naar het drop-down-menu om deze op de gewenste breedte en plaats te krijgen. Veel eigenschappen van de vorige mediaquery moeten worden overschreven.
+   </p>
+</article>
+<iframe width="1280" height="720" src="https://www.youtube.com/embed/Ua6hlBUUU_s?rel=0" frameborder="0" allowfullscreen></iframe>
+
+
+<h3>responsive menu stap 7: menu verbergen (00:07:09)</h3>
+<article>
+   <p>
+    Voor de mobiele versie is het prettig dat het menu (dat de bovenzijde van de viewport voor een groot deel bedenkt) verborgen is en met een klik weer tevoorschijn komt. <br>
+Dit kan zonder script: css3 beschikt over de siblingselector <code>~</code>. <br>
+Als je een element neemt en je voegt daar met de ~ een sibling die in de markup er direct opvolgt aan toe, dan kun je daarvan de eigenschappen gaan beschrijven. <br>
+We maken een input type checkbox met een id en een label met bijpassend for-attribuut. <br>
+Met de selector <code>input[type='checbox]:checked ~ nav</code> selecteer je de nav voor het geval de checkbox gechecked is.
+   </p>
+</article>
+<iframe width="1280" height="720" src="https://www.youtube.com/embed/UuDfVQTbUt8?rel=0" frameborder="0" allowfullscreen></iframe>
+
+<h3>responsive menu stap 8: toggle-knop opmaken (00:10:38)</h3>
+<article>
+   <p>
+    In de opmaak wordt nog het een en ander aangepast waaronder:
+<ol>
+  <li>de checkbox is functioneel, maar moet uit beeld;</li>
+   <li>het label moet voor bredere viewports verborgen worden;</li>
+   <li>met Fontawesome wordt de labeltekst een icon;</li>
+   <li>het label over de volledige breedte: <code>display: block;</code></li>
+   <li>het icon en het label vergroten.</li></ol>
+  
+  Link: <a href="https://fortawesome.github.io/Font-Awesome/">https://fortawesome.github.io/Font-Awesome/</a>
+   </p>
+</article>
+<iframe width="1280" height="720" src="https://www.youtube.com/embed/LcyxORV1i-8?rel=0" frameborder="0" allowfullscreen></iframe>
+
+
+<h3>responsive menu stap 9: Font Awesome: caret toevoegen (00:03:16)</h3>
+<article>
+   <p>
+    Nu we toch in Font Awesome bezig zijn kan er aan de dropdown ook nog wel een caret-down symbol worden toegevoegd.
+   </p>
+</article>
+<iframe width="1280" height="720" src="https://www.youtube.com/embed/FjI-UswzM3k?rel=0" frameborder="0" allowfullscreen></iframe>
+<!--
+
+<h3>responsive menu stap :  (00:02:57)</h3>
+<article>
+   <p>
+    
+   </p>
+</article>
+<iframe width="1280" height="720" src="https://www.youtube.com/embed/vQZFOUOUAxE?rel=0" frameborder="0" allowfullscreen></iframe>
+-->
+<hr>
+    <article>
+    <p>
+
+    Plaats jouw training online en lever het linkje in via ELO</p>
+    <p>Een training naar <a href="horizontaalMenu.html">horizontaal menu</a></p>
+    </article>
+
+   
+</body>
+</html>
