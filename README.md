@@ -12,7 +12,8 @@ Bijdragen:
 * Jelle Sjollema 
 * [Theo den Blanken](http://blanken5.home.xs4all.nl/ "Site van Theo") 
 
-Instructie voor het bewerken van * [md-bestanden](https://confluence.atlassian.com/bitbucketserver/markdown-syntax-guide-776639995.html "md-bestanden bewerken")
+Instructie voor het bewerken van
+* [md-bestanden](https://confluence.atlassian.com/bitbucketserver/markdown-syntax-guide-776639995.html "md-bestanden bewerken")
 * [.gitignore bestanden voor Mac](http://devoh.com/blog/2013/01/global-gitignore)
 
 
